@@ -46,21 +46,32 @@ portYIELD_FROM_ISR()
 遅延割り込み処理　タスク　に直接　遷移することを保証する。
 ISR内にすべての処理を記述したのと同様　時間的に　連続的に　実行される。
 
+補足説明
+task notification　のほうが　割り込み発生時にタスクをブロック解除　効率がよい
+
+
+
+
+
+portMAX_DELAY　が指定された場合　タイムアウト無し
+INCLUDE_vTaskSuspend は 1　にセットしてある場合
 
 
 
 
 
 
+///////////////////////////////////////////////////////////////
+<<<<<9>>>>>
+Chapter 9 Task Notifications
+
+<<<<<9.1>>>>>
 
 
-
-
-
-
-
-
-
+To include task notification functionality 
+set
+configUSE_TASK_NOTIFICATIONS to 1 
+in FreeRTOSConfig.h.
 
 
 
