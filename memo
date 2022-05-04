@@ -17,10 +17,13 @@ structures, task handles,queue handles,etc.
 ‘pc’ pointer to char 
 
 関数名プリフィックス
+返り値　と　定義されているファイル名　から決定されている
+例
+pvTimerGetTimerID() 
+返り値　pointer to void
+定義は　timers.c
 
-
-
-
+ファイルスコープの関数(private)のプリフィックスは ‘prv’.
 
 
 
