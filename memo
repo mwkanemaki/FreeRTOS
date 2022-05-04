@@ -1,5 +1,32 @@
 
 
+変数名プリフィックス
+‘c’ for char, 
+‘s’ for int16_t (short), 
+‘l’ int32_t (long), 
+‘x’ for BaseType_t 
+and 
+any other non-standard types 
+structures, task handles,queue handles,etc.
+
+‘u’　unsigned
+‘p’　pointer
+
+例
+‘uc’ uint8_t
+‘pc’ pointer to char 
+
+関数名プリフィックス
+
+
+
+
+
+
+
+
+
+
 
 
 <<<<<6.3>>>>>
