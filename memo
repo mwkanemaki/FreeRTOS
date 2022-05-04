@@ -1,6 +1,6 @@
 
 
-変数名プリフィックス
+変数名 接頭辞
 ‘c’ for char, 
 ‘s’ for int16_t (short), 
 ‘l’ int32_t (long), 
@@ -16,19 +16,48 @@ structures, task handles,queue handles,etc.
 ‘uc’ uint8_t
 ‘pc’ pointer to char 
 
-関数名プリフィックス
+関数名　接頭辞
 返り値　と　定義されているファイル名　から決定されている
 例
 pvTimerGetTimerID() 
 返り値　pointer to void
 定義は　timers.c
 
-ファイルスコープの関数(private)のプリフィックスは ‘prv’.
+ファイルスコープの関数(private)の接頭辞は ‘prv’.
 
 
+マクロ名
+接頭辞は小文字　その他の部分は大文字を使用しています。
+接頭辞の部分で定義されているファイル名を表しています。
+例
+マクロ名:portMAX_DELAY   　　
+接頭辞:port 　
+ファイル名:portable.h あるいは portmacro.h
 
+taskENTER_CRITICAL()　　　　　　
+task
+task.h
 
+pdTRUE
+pd
+projdefs.h
 
+configUSE_PREEMPTION
+config
+FreeRTOSConfig.h
+
+errQUEUE_FULL
+err
+projdefs.h
+
+注意
+semaphore API　は大部分マクロで定義されているが、関数名の規則が使用されている
+
+Common macro definitions
+pdTRUE　1
+pdFALSE　0
+pdPASS　1
+pdFAIL　0
 
 
 
